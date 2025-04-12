@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Projects.css'
-import project1 from "../assets/cv.png"
-import project2 from "../assets/cv.png"
+import project1 from "../assets/Project1.png"
+// import project2 from "../assets/cv.png"
 const Projects = () => {
     return (
         <div id='portfolio' className='mywork'>
@@ -10,15 +10,15 @@ const Projects = () => {
             </div>
             <div className='mywork-container'>
                 <div className='items'>
-                    <a href='#'>
+                    <a href='https://popappz.com/'>
                         <img src={project1} alt='project' />
                     </a>
                 </div>
-                <div className='items'>
+                {/* <div className='items'>
                     <a href='#'>
                         <img src={project2} alt='project' />
                     </a>
-                </div>
+                </div> */}
             </div>
 
         </div>

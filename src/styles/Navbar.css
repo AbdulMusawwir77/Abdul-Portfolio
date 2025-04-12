@@ -12,7 +12,7 @@ html {
     align-items: center;
     z-index: 100;
     width: 100vw;
-    padding: 15px 10px 0 10px;
+    padding: 15px 10px 10px 10px;
     
 }
 .header.sticky {
@@ -94,7 +94,7 @@ html {
        font-size: 15px;
     }
 }
-@media (max-width: 790px) {
+@media (max-width: 800px) {
     .header {
       padding: 10px 0;
     }
@@ -118,7 +118,7 @@ html {
       margin: 0;
     }
     .navbar a {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin: 3rem;
     }
     .logo {
@@ -132,14 +132,13 @@ html {
     }
    .logo{
     margin-left: 6rem;
-    font-size: 20px;
+    font-size: 25px;
    }
    .menu-icon{
     font-size: 15px;
    }
    .navbar a{
-    font-size: 12px;
-    
+    font-size: 2rem;
     padding: 0;
     margin: 2rem;
    }
@@ -149,24 +148,17 @@ html {
 }
 @media (max-width:400px) {
       .logo{
-        font-size: 20px;
+        font-size: 25px;
       }
       .menu-icon{
         font-size: 13px;
       }
       .navbar a{
-        font-size: 13px;
+        font-size: 2rem;
         padding: 0;
         margin: 12px;
        }
        .navbar{
         padding: 20px 15px;
-       }
-}
-@media (max-width:374px) {
-    .navbar a{
-        font-size: 10px;
-        padding: 0;
-        margin: 12px;
        }
 }

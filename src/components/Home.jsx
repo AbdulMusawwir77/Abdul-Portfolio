@@ -3,7 +3,7 @@ import '../styles/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { motion } from 'framer-motion';
-import homeImage from '../assets/Home.PNG';
+import icon from "../assets/Icon.jpeg"
 
 const Home = () => {
     return (
@@ -15,7 +15,7 @@ const Home = () => {
             transition={{ duration: 1 }}
         >
             <motion.img 
-                src={homeImage} 
+                src={icon}
                 alt="Home" 
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}

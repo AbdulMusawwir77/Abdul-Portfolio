@@ -10,13 +10,13 @@
   width: 100%;
   overflow: hidden;
   background-color: black;
-  margin: 100px 0;
+  padding: 50px 0 100px;
 }
 
 /* Image styling */
 .home img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin-top: 100px;
 }
 
@@ -65,7 +65,7 @@
   background-color: #131313;
   cursor: pointer;
   border-radius: 50%;
-  padding: 8px 10px;
+  padding: 12px 14px;
 }
 
 .icons {
@@ -89,6 +89,10 @@
   }
   .home h2 {
     font-size: 20px;
+  }
+  .home img{
+    height: 120px;
+    width: 120px;
   }
 }
 
