@@ -73,7 +73,9 @@
   color: #D8D8D8;
   font-size: 16px;
 }
-
+.contact-right input{
+  height: 50px;
+}
 .contact-right input,
 .contact-right textarea {
   border: none;

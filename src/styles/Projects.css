@@ -90,4 +90,9 @@
       flex-direction: column;
     }
   }
-  
+  @media (max-width: 430px) {
+    .items img {
+      padding: 0 30px;
+      border-radius: 12%;
+    }
+  }

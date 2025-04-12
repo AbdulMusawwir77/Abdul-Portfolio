@@ -10,7 +10,7 @@
   width: 100%;
   overflow: hidden;
   background-color: black;
-  padding: 50px 0 100px;
+  padding: 50px 0 150px;
 }
 
 /* Image styling */
@@ -74,21 +74,13 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-  .home h1 {
-    font-size: 35px;
-  }
-  .home h2 {
-    font-size: 25px;
-  }
-}
 
 @media (max-width: 655px) {
   .home h1 span {
-    font-size: 27px;
+    font-size: 30px;
   }
   .home h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .home img{
     height: 120px;
@@ -101,20 +93,10 @@
     gap: 10px;
   }
   .home h1 span {
-    font-size: 23px;
+    font-size: 25px;
   }
   .home h2 {
-    font-size: 15px;
-  }
-  .home-connect {
-    font-size: 15px;
-    padding: 5px 12px;
-  }
-  .social-icons a {
-    font-size: 18px;
-  }
-  .icons {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
