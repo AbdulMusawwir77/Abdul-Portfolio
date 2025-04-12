@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
-// import Projects from './components/Projects'
+import Projects from './components/Projects'
 import Contact from "./components/Contact";
 const App = () => {
   return (
@@ -22,8 +22,8 @@ const App = () => {
         <Services />
       </section>
 
-      <section id="portfolio">
-        {/* <Projects /> */}
+      <section id="projects">
+        <Projects />
       </section>
 
       <section id="contact">

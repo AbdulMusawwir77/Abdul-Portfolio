@@ -3,6 +3,7 @@ import '../styles/Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import 'boxicons/css/boxicons.min.css';
+import { motion } from 'framer-motion'; // Importing Framer Motion
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
@@ -18,7 +19,7 @@ const Services = () => {
         'CMS Integration',
         'Maintenance and Support',
       ],
-      featureDescription: // Fixed the key name
+      featureDescription:
         'Crafting responsive, user-friendly, and visually appealing websites tailored to your business needs. From custom designs to seamless functionality, we build websites that leave a lasting impression. Our services include:',
     },
     {
@@ -31,10 +32,9 @@ const Services = () => {
         'Integration with Blogs, Galleries, or Case Studies',
         'Mobile-Responsive Layouts',
       ],
-      featureDescription: // Fixed the key name
+      featureDescription:
         'Showcase your skills, achievements, and projects with a personalized portfolio design tailored to your professional identity. We create visually stunning and user-friendly portfolios that leave a lasting impression.',
     },
-    // Add more services as needed
   ];
 
   const handleReadMoreClick = (service) => {
@@ -47,40 +47,71 @@ const Services = () => {
 
   return (
     <div id="services" className="services">
-      <div className="services-title">
-        <h1>My <span>Services</span></h1>
-      </div>
-      <div className="services-container">
+      <motion.div
+        className="services-title"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h1>
+          My <span>Services</span>
+        </h1>
+      </motion.div>
+
+      <motion.div
+        className="services-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
         {services.map((service) => (
-          <div key={service.id} className="services-format">
+          <motion.div
+            key={service.id}
+            className="services-format"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
             <h3>{service.id}</h3>
             <h2>{service.title}</h2>
             <p>{service.description}</p>
-            <button
+            <motion.button
               className="services-readmore"
               onClick={() => handleReadMoreClick(service)}
+              whileHover={{ scale: 1.1, boxShadow: '0 0 15px #B415FF' }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 300 }}
             >
               Read More <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-          </div>
+            </motion.button>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
+
       {selectedService && (
-        <div className="popup">
-          <div className="popup-content">
+        <motion.div
+          className="popup"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div className="popup-content" initial={{ y: -50 }} animate={{ y: 0 }}>
             <h2>{selectedService.title}</h2>
-            <p>{selectedService.featureDescription}</p> {/* Updated property name */}
+            <p>{selectedService.featureDescription}</p>
             {selectedService.features.map((feature, index) => (
               <div key={index} className="feature-item">
                 <i className="bx bx-check"></i>
                 <h3>{feature}</h3>
               </div>
             ))}
-            <button className="close-popup" onClick={handleClosePopup}>
+            <motion.button
+              className="close-popup"
+              onClick={handleClosePopup}
+              whileHover={{ scale: 1.1, boxShadow: '0 0 15px #B415FF' }}
+            >
               Close
-            </button>
-          </div>
-        </div>
+            </motion.button>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );
