@@ -92,7 +92,7 @@
   }
   @media (max-width: 430px) {
     .items img {
-      margin: 0 30px;
+      padding: 0 30px;
       border-radius: 12%;
     }
   }
