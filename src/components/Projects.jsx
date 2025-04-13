@@ -18,6 +18,7 @@ const Projects = () => {
                     </a>
                 </div>
             </div>
+            <hr/>
         </div>
     );
 }

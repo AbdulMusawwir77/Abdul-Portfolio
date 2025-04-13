@@ -78,6 +78,7 @@ const Home = () => {
             >
                 <FontAwesomeIcon className='icons' icon={faWhatsapp} /> Let's Talk
             </motion.a>
+            <hr/>
         </motion.div>
     );
 }

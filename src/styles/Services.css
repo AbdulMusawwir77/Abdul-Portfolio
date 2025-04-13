@@ -93,7 +93,10 @@
   transform: scale(1.05);
   transition: 0.4s;
 }
-
+.services hr{
+  width: 80%;
+  margin-top: 120px;
+}
 .popup {
   position: fixed;
   top: 0;
