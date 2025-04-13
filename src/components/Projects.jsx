@@ -11,7 +11,7 @@ const Projects = () => {
             </div>
             <div className='mywork-container'>
                 <div className='items'>
-                    <a href='https://popappz.com/'>
+                    <a href='https://popappz.com/' target="_blank" rel="noopener noreferrer">
                         <div className='img-wrapper'>
                             <img src={project1} alt='project' className="bouncing" />
                         </div>

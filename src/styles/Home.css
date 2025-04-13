@@ -10,13 +10,13 @@
   width: 100%;
   overflow: hidden;
   background-color: black;
-  padding: 50px 0 100px;
+  padding: 30px 0 100px;
 }
 
 /* Image styling */
 .home img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   margin-top: 100px;
 }
 
@@ -82,16 +82,11 @@
   .home h2 {
     font-size: 25px;
   }
-  .home img{
-    height: 120px;
-    width: 120px;
-  }
 }
 
 @media (max-width: 500px) {
   .home {
     gap: 10px;
-    padding: 150px 0 150px;
   }
   .home h1 span {
     font-size: 22px;
@@ -99,32 +94,8 @@
   .home h2 {
     font-size: 18px;
   }
-}
-
-@media (max-width: 410px) {
-  .home {
-    gap: 8px;
-    margin: 0 0 80px 0;
-  }
-  .home img {
-    width: 80px;
-    height: 80px;
-    margin-top: 150px;
-  }
-  .home h1 span {
-    font-size: 20px;
-  }
-  .home h2 {
-    font-size: 16px;
-  }
-  .home-connect {
-    font-size: 15px;
-    padding: 8px 15px;
-  }
-  .social-icons a {
-    font-size: 18px;
-  }
-  .icons {
-    font-size: 15px;
+  .home img{
+    width: 150px;
+    height: 150px;
   }
 }
