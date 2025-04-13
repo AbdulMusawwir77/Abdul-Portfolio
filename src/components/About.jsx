@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../styles/About.css';
 import cvImage from '../../src/assets/cv.png';
-
+import cv from "../assets/PDF/Abdul Resume.pdf"
 const About = () => {
     return (
         <motion.div 
@@ -52,13 +52,15 @@ const About = () => {
                     <div className='about-para'>
                         <p>As a 17-year-old developer, I bring fresh energy and creativity to every project. My journey began with a fascination for technology and quickly grew into a deep commitment to mastering the art of web development. Over time, I’ve honed my skills in designing responsive layouts, optimizing website performance, and writing clean, efficient code.</p>
                     </div>
-                    <motion.button 
+                    <motion.a 
                         className='about-connect'
+                        href={cv}
+                        download={'Abdul_Musawwir_Resume.pdf'}
                         whileHover={{ scale: 1.05, boxShadow: "0 0 25px #B415FF" }}
                         whileTap={{ scale: 0.95 }}
                     >
                         Download CV
-                    </motion.button>
+                    </motion.a>
                 </motion.div>
             </motion.div>
         </motion.div>

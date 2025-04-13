@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../styles/Navbar.css';
 import { motion, AnimatePresence } from "framer-motion";
-
+import cv from "../assets/PDF/Abdul Resume.pdf"
 export default function Main() {
   const [activeSection, setActiveSection] = useState("");
   const [isSticky, setIsSticky] = useState(false);
@@ -111,14 +111,16 @@ export default function Main() {
         </AnimatePresence>
       </div>
 
-      <motion.button
+      <motion.a
         className="menu-icon"
+        href={cv}
+        download={'Abdul_Musawwir_Resume.pdf'}
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
       >
         Download CV
-      </motion.button>
+      </motion.a>
     </header>
   );
 }
