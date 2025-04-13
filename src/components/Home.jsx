@@ -46,12 +46,14 @@ const Home = () => {
             >
                 <motion.a 
                     href="https://linkedin.com/in/abdul-musawwir-7a715a322"
+                    target="_blank"
                     whileHover={{ scale: 1.3, y: -5, boxShadow: '0 0 15px #B415FF', border: 'none' }}
                 >
                     <FontAwesomeIcon icon={faLinkedin} />
                 </motion.a>
                 <motion.a 
                     href="https://www.instagram.com/__.abdul__/"
+                    target="_blank"
                     whileHover={{ scale: 1.3, y: -5, boxShadow: '0 0 15px #B415FF', border: 'none' }}
                 >
                     <FontAwesomeIcon icon={faInstagram} />
@@ -60,6 +62,7 @@ const Home = () => {
 
             <motion.a 
                 href="https://wa.me/+916282030645?text=Hello!" 
+                target="_blank"
                 className="home-connect"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 25px #B415FF" }}
                 whileTap={{ scale: 0.95 }}
