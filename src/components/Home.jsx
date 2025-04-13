@@ -1,22 +1,22 @@
 import React from 'react';
 import '../styles/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin,faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { motion } from 'framer-motion';
 import icon from "../assets/Icon.jpeg"
-
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const Home = () => {
     return (
-        <motion.div 
-            id='home' 
+        <motion.div
+            id='home'
             className='home'
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
         >
-            <motion.img 
+            <motion.img
                 src={icon}
-                alt="Home" 
+                alt="Home"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 1 }}
@@ -43,7 +43,7 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 1 }}
             >
-                HTML | CSS | JAVASCRIPT 
+                HTML | CSS | JAVASCRIPT
             </motion.h2>
 
             <motion.h2
@@ -53,30 +53,30 @@ const Home = () => {
             >
                 BOOTSTRAP | REACT JS
             </motion.h2>
-            <motion.div 
+            <motion.div
                 className="social-icons"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 1 }}
             >
-                <motion.a 
+                <motion.a
                     href="https://linkedin.com/in/abdul-musawwir-7a715a322"
                     target="_blank"
                     whileHover={{ scale: 1.3, y: -5, boxShadow: '0 0 15px #B415FF', border: 'none' }}
                 >
                     <FontAwesomeIcon icon={faLinkedin} />
                 </motion.a>
-                <motion.a 
-                    href="https://www.instagram.com/__.abdul__/"
+                <motion.a
+                    href="https://github.com/"
                     target="_blank"
                     whileHover={{ scale: 1.3, y: -5, boxShadow: '0 0 15px #B415FF', border: 'none' }}
                 >
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faGithub} />
                 </motion.a>
             </motion.div>
 
-            <motion.a 
-                href="https://wa.me/+916282030645?text=Hello!" 
+            <motion.a
+                href="https://wa.me/+916282030645?text=Hello!"
                 target="_blank"
                 className="home-connect"
                 whileHover={{ scale: 1.05, boxShadow: "0 0 25px #B415FF" }}
