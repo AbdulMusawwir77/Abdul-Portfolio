@@ -192,11 +192,6 @@
     font-size: 14px;
     padding: 8px 12px;
   }
-
-  .contact-submit {
-    font-size: 16px;
-    padding: 8px 15px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -215,11 +210,5 @@
   .contact-right textarea {
     font-size: 12px;
     padding: 6px 10px;
-  }
-
-  .contact-submit {
-    font-size: 14px;
-    padding: 6px 12px;
-    margin-bottom: 100px;
   }
 }
