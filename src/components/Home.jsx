@@ -67,7 +67,7 @@ const Home = () => {
                     <FontAwesomeIcon icon={faLinkedin} />
                 </motion.a>
                 <motion.a
-                    href="https://github.com/"
+                    href="https://github.com/AbdulMusawwir77"
                     target="_blank"
                     whileHover={{ scale: 1.3, y: -5, boxShadow: '0 0 15px #B415FF', border: 'none' }}
                 >
