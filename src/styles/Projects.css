@@ -1,98 +1,99 @@
 .mywork {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 100px 0 150px;
-    z-index: 0;
-    background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 0 150px;
+  z-index: 0;
+  background-color: #131313;
+}
+
+.mywork-title span {
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 10px;
+}
+
+.mywork-title h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.mywork-container {
+  margin: 0 80px;
+  display: flex;
+  padding-top: 50px;
+  position: relative;
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.items {
+  width: 405px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Continuous Bounce Animation */
+.bouncing {
+  animation: bounce 3s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
   }
-  
-  .mywork-title span {
-    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-left: 10px;
+  40% {
+      transform: translateY(-20px);
   }
-  
-  .mywork-title h1 {
-    font-size: 6rem;
-    font-weight: 700;
-    animation: fadeIn 2s ease-in-out; /* Animation for the title */
+  60% {
+      transform: translateY(-10px);
   }
-  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 780px) {
   .mywork-container {
-    margin: 0 80px;
-    display: flex;
-    padding-top: 50px;
-    position: relative;
-    opacity: 0;
-    animation: slideUp 1s ease-out forwards; /* Slide up effect for container */
-  }
-  
-  .items {
-    width: 405px;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-in-out forwards; /* Fade-in and slide-up for each project */
-    animation-delay: 0.3s;
-  }
-  
-  .items img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.items:hover img {
-    transform: scale(1.05);
-    box-shadow: 0 0 50px #b2b2b2;
-}
-
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideUp {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @media (max-width: 780px) {
-    .mywork-container {
       flex-direction: column;
-    }
   }
-  @media (max-width: 500px) {
-    .items img {
+}
+
+@media (max-width: 500px) {
+  .img-wrapper img {
       padding: 0 30px;
       border-radius: 12%;
-    }
   }
+}
