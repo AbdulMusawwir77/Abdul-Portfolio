@@ -113,7 +113,6 @@ const Services = () => {
           </motion.div>
         </motion.div>
       )}
-      <hr/>
     </div>
   );
 };

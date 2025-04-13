@@ -10,7 +10,7 @@
   width: 100%;
   overflow: hidden;
   background-color: black;
-  padding: 40px 0 80px;
+  padding: 0 0 150px;
 }
 
 /* Image styling */
@@ -72,11 +72,6 @@
   background-color: transparent;
   font-size: 25px;
 }
-.home hr{
-  width: 80%;
-  margin-top: 100px;
-}
-
 /* Responsive styles */
 
 @media (max-width: 655px) {

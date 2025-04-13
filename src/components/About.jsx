@@ -61,7 +61,6 @@ const About = () => {
                     </motion.button>
                 </motion.div>
             </motion.div>
-            <hr/>
         </motion.div>
     );
 };

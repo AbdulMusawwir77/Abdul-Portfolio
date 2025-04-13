@@ -43,9 +43,16 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.9, duration: 1 }}
             >
-                HTML | CSS | JAVASCRIPT | REACT JS
+                HTML | CSS | JAVASCRIPT 
             </motion.h2>
 
+            <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 1 }}
+            >
+                BOOTSTRAP | REACT JS
+            </motion.h2>
             <motion.div 
                 className="social-icons"
                 initial={{ opacity: 0 }}
@@ -78,7 +85,6 @@ const Home = () => {
             >
                 <FontAwesomeIcon className='icons' icon={faWhatsapp} /> Let's Talk
             </motion.a>
-            <hr/>
         </motion.div>
     );
 }
