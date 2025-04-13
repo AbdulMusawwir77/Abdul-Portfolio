@@ -111,36 +111,20 @@
        .about-para{
         font-size: 13px;
        }
-       .about-left img{
+       /* .about-left img{
         width: 200px;
         height: 200px;
-       }
+       } */
        .about-left{
       margin-right: 50px;   
     }
       .about-connect{
-    font-size: 12px;
-    padding: 10px 12px;
-}
+    font-size: 15px;
+    padding: 12px 14px;
+   }
 }
 @media (max-width:450px) {
     .about-sections{
         gap: 0;
-       }
-}
-@media (max-width:370px) {
-    .about-right{
-        margin-left: 20px;
-    }
-    .about-para{
-        font-size: 11px;
-       }
-       .about-left img{
-        width: 130px;
-        height: 130px;
-       }
-       .about-connect {
-        font-size: 12px;
-        padding: 10px;
        }
 }
